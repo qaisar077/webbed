@@ -3,53 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook - Log In or Sign Up</title>
+    <title>GitHub Pricing</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<main class="facebook-container">
-    <div class="login-box">
-        <!-- Логотип Facebook -->
-        <div class="logo-section">
-            <h1 class="facebook-logo">
-                <i class="fab fa-facebook-square"></i>
-                <span>facebook</span>
-            </h1>
-            <p class="tagline">Connect with friends and the world around you on Facebook.</p>
+<main class="github-container">
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Try the Copilot-powered platform</h1>
+            <p class="hero-description">
+                Get the complete developer platform. Build, scale, and deliver secure software.
+                GitHub's AI-powered platform accelerates innovation from code to cloud.
+            </p>
+            <button class="hero-cta">Start a free enterprise trial</button>
         </div>
+    </section>
 
-        <!-- Форма входа -->
-        <form class="login-form">
-            <div class="form-group">
-                <input type="text" id="email" name="email" placeholder="Email or phone number" required>
-                <label for="email" class="visually-hidden">Email or phone number</label>
+
+    <section class="pricing-section">
+        <h2 class="section-title">Choose the plan that's right for you.</h2>
+
+        <div class="pricing-cards">
+
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">
+                        <span class="price-amount">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Unlimited public/private repositories</li>
+                    <li><i class="fas fa-check"></i> 2,000 CI/CD minutes per month</li>
+                    <li><i class="fas fa-check"></i> 500MB of Packages storage</li>
+                    <li><i class="fas fa-check"></i> Community support</li>
+                    <li><i class="fas fa-check"></i> GitHub Issues</li>
+                    <li><i class="fas fa-check"></i> GitHub Projects</li>
+                </ul>
+                <button class="plan-btn free-btn">Join for free</button>
+                <div class="plan-note">Free forever, no credit card needed</div>
             </div>
 
-            <div class="form-group">
-                <input type="password" id="password" name="password" placeholder="Password" required>
-                <label for="password" class="visually-hidden">Password</label>
+
+            <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="card-header">
+                    <h3 class="plan-name">Team</h3>
+                    <div class="plan-price">
+                        <span class="price-amount">$4</span>
+                        <span class="price-period">/user/month</span>
+                    </div>
+                </div>
+                <p class="plan-description">Advanced collaboration and support for teams</p>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> <strong>Everything in Free, plus:</strong></li>
+                    <li><i class="fas fa-check"></i> 3,000 CI/CD minutes per month</li>
+                    <li><i class="fas fa-check"></i> 2GB of Packages storage</li>
+                    <li><i class="fas fa-check"></i> Code owners</li>
+                    <li><i class="fas fa-check"></i> Required reviewers</li>
+                    <li><i class="fas fa-check"></i> Multiple reviewers in pull requests</li>
+                    <li><i class="fas fa-check"></i> Draft pull requests</li>
+                </ul>
+                <button class="plan-btn team-btn">Continue with Team</button>
+                <div class="plan-note">$48 per user/year billed annually</div>
             </div>
 
-            <button type="submit" class="login-btn">Log In</button>
 
-            <div class="form-links">
-                <a href="#" class="forgot-link">Forgot password?</a>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">
+                        <span class="price-amount">$21</span>
+                        <span class="price-period">/user/month</span>
+                    </div>
+                </div>
+                <p class="plan-description">Security, compliance, and flexible deployment</p>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> <strong>Everything in Team, plus:</strong></li>
+                    <li><i class="fas fa-check"></i> 50,000 CI/CD minutes per month</li>
+                    <li><i class="fas fa-check"></i> 50GB of Packages storage</li>
+                    <li><i class="fas fa-check"></i> Advanced auditing</li>
+                    <li><i class="fas fa-check"></i> SAML single sign-on</li>
+                    <li><i class="fas fa-check"></i> Enterprise-grade support</li>
+                    <li><i class="fas fa-check"></i> 99.9% uptime SLA</li>
+                </ul>
+                <button class="plan-btn enterprise-btn">Contact Sales</button>
+                <div class="plan-note">$252 per user/year billed annually</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="addons-section">
+        <h2 class="section-title">Additional add-ons</h2>
+        <p class="section-subtitle">Enhance your GitHub experience with these powerful add-ons</p>
+
+        <div class="addons-grid">
+
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="addon-title">GitHub Copilot</h3>
+                <p class="addon-description">Your AI pair programmer that helps you write code faster.</p>
+                <div class="addon-price">
+                    <span class="price">$10</span>
+                    <span class="period">/user/month</span>
+                </div>
             </div>
 
-            <div class="divider"></div>
 
-            <button type="button" class="create-btn">Create new account</button>
-        </form>
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="addon-title">Advanced Security</h3>
+                <p class="addon-description">Find and fix vulnerabilities before they reach production.</p>
+                <div class="addon-price">
+                    <span class="price">$21</span>
+                    <span class="period">/user/month</span>
+                </div>
+            </div>
 
-        <p class="create-page">
-            <a href="#"><strong>Create a Page</strong></a> for a celebrity, brand or business.
-        </p>
-    </div>
+
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="addon-title">GitHub Actions</h3>
+                <p class="addon-description">Automate your workflow from idea to production.</p>
+                <div class="addon-price">
+                    <span class="price">$0.008</span>
+                    <span class="period">/minute after free tier</span>
+                </div>
+            </div>
+
+
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                <h3 class="addon-title">Packages</h3>
+                <p class="addon-description">Host and manage packages in one place.</p>
+                <div class="addon-price">
+                    <span class="price">$0.25</span>
+                    <span class="period">/GB after free tier</span>
+                </div>
+            </div>
+
+
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="addon-title">Support</h3>
+                <p class="addon-description">Get help when you need it with premium support.</p>
+                <div class="addon-price">
+                    <span class="price">$1,500</span>
+                    <span class="period">/month</span>
+                </div>
+            </div>
+
+
+            <div class="addon-card">
+                <div class="addon-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="addon-title">GitHub Enterprise Server</h3>
+                <p class="addon-description">Self-hosted solution for enterprise requirements.</p>
+                <div class="addon-price">
+                    <span class="price">Contact</span>
+                    <span class="period">Sales</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
-    <p>Student Project - Facebook Login Page Replica</p>
+    <p>Student Project - GitHub Pricing Page Replica (Up to "Additional add-ons" section)</p>
+    <p class="note">Note: Navigation bar, customer logos carousel, testimonials, feature comparison table, and footer are not included per requirements.</p>
 </footer>
 </body>
 </html>
