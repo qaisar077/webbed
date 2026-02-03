@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HTML & CSS Intro</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<main class="facebook-container">
+    <div class="login-box">
+        <!-- Логотип Facebook -->
+        <div class="logo-section">
+            <h1 class="facebook-logo">
+                <i class="fab fa-facebook-square"></i>
+                <span>facebook</span>
+            </h1>
+            <p class="tagline">Connect with friends and the world around you on Facebook.</p>
+        </div>
 
-  <header>
-    <h1>Welcome to HTML & CSS Lab</h1>
-    <nav>
-      <a href="#intro">Intro</a> |
-      <a href="#tags">HTML Tags</a> |
-      <a href="#css">CSS Examples</a>
-    </nav>
-  </header>
+        <!-- Форма входа -->
+        <form class="login-form">
+            <div class="form-group">
+                <input type="text" id="email" name="email" placeholder="Email or phone number" required>
+                <label for="email" class="visually-hidden">Email or phone number</label>
+            </div>
 
-  <section id="intro">
-    <h2>Intro to HTML</h2>
-    <p>HTML stands for HyperText Markup Language.</p>
-    <p>It consists of tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code>.</p>
-  </section>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="password" class="visually-hidden">Password</label>
+            </div>
 
-  <section id="tags">
-    <h2>Basic HTML Tags</h2>
-    <h3>Text Elements</h3>
-    <p>This is a paragraph.</p>
-    <strong>Bold text</strong> and <em>italic text</em>
+            <button type="submit" class="login-btn">Log In</button>
 
-    <h3>Links and Images</h3>
-    <a href="https://www.khanacademy.org">Khan Academy</a>
-    <br>
-    <img src="assets/images/sample.jpg" alt="Sample Image" width="200">
-  </section>
+            <div class="form-links">
+                <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
 
-  <section id="css">
-    <h2>CSS Styler</h2>
-    <p class="highlight">This paragraph is highlighted using CSS class.</p>
-    <p id="unique">This paragraph uses an ID selector.</p>
-  </section>
+            <div class="divider"></div>
 
+            <button type="button" class="create-btn">Create new account</button>
+        </form>
+
+        <p class="create-page">
+            <a href="#"><strong>Create a Page</strong></a> for a celebrity, brand or business.
+        </p>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>Student Project - Facebook Login Page Replica</p>
+</footer>
 </body>
 </html>
