@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.login-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facebook-logo {
+    color: #1877f2;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.facebook-logo span {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.tagline {
+    color: #606770;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Кнопки */
+.login-btn {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+.create-btn {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.create-btn:hover {
+    background-color: #36a420;
+}
+
+
+.form-links {
+    text-align: center;
+}
+
+.forgot-link {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+
+.divider {
+    border-top: 1px solid #dadde1;
+    margin: 10px 0;
+}
+
+
+.create-page {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #1c1e21;
+}
+
+.create-page a {
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #737373;
+    font-size: 0.9rem;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+@media (max-width: 450px) {
+    .login-box {
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .facebook-logo {
+        font-size: 2rem;
+    }
+
+    .facebook-logo span {
+        font-size: 2.2rem;
+    }
+}
